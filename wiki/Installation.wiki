@@ -1,0 +1,32 @@
+#summary Installation instructions
+#labels Phase-Deploy
+
+There are several ways of installing the drivers or the whole packet on your machine. You either can download a file tree or a snapshot of a driver to somewhere, unpack it and do the makes inside there accordingly. Alternatively, you could use the subversion mechanism; this makes it really simple to install working directories on your machine, and keep the drivers up to date. Another method (but this is not implemented yet) would use installation packets like rpm or the debian equivalent if you are only interested in the compiled versions of the driver for your particular system.
+
+= Prerequisits=
+Perhaps this is a bit of a stupid remark on this platform, but you need to make sure that you have installed a few packets on your machine:
+ * The subversion packet management system
+ * A set of development tools. Specifically, ensure that you have
+   * *gcc* as a compiler. Perhaps it works with others as well, but I have not tried
+   * the *gnu make* utility
+   * The *kernel sources* or at least the include files which allow you to compile kernel modules
+
+= Installation of all packets via svn =
+Assuming that you want your drivers located in a subdirectory named `programdirectory` in the directory `homedirectory`, then you can install all the drivers with the following steps:
+ * cd into `homedirectory`
+ * get all code with the command `svn checkout http://linuxmeasurement.googlecode.com/svn/trunk/ programdirectory`
+ * cd into the individual subdirectories and follow the make instructions there.
+
+You should be able to add code and other directories as well at your heart's content. If you want to update all drivers at once from the repository, go into the program directory and issue the command `svn update` . All the repository and status information is kept in the hidden directories `.svn`. Specifically, an update will not affect any other directories and files you have created.
+
+= Migration from an existing directory structure to svn control =
+If there is already a directory on your machine with roughly the necessary directory structure as for the drivers here, it would be nice to have a way to migrate them to a svn controlled way without disruption of the current work.
+
+At the moment, it is not entirely clear to me how this would work. Instructions on this to come here soon.
+
+= Installing only a single driver via svn =
+If you only want to install a single driver (e.g. `dt302`) into your `driverdirectory`, follow these steps:
+ * cd into the `driverdirectory`
+ * issue the command `svn checkout http://linuxmeasurement.googlecode.com/svn/trunk/dt302`
+
+If you later want to update the driver, cd into the driver directory and issue the command `svn update` - then, don't forget to issue the `make` instructions.
