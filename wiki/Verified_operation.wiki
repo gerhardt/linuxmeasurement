@@ -1,0 +1,16 @@
+#summary Confirmed operation under various kernels/distros/hardware
+
+= Disclaimer =
+At the point of uploading code to this repository, we use different drivers under different distros/kernel version, and we often don't make an effort to ensure all drivers work in all combinations. This page should give an idea of where which driver is confirmed to work.
+
+Keep in mind that this list is very incomplete, since one needs to verify if the uploaded code is the same as what we use on various machines. But chances are that the code works on reasonably similar kernels.
+
+= Confirmed list =
+
+|| *Driver* || *Confirmed to work in the configuration* || *Known limitations* ||
+|| dt302 || TBD || ||
+|| dt340 || TBD || ||
+|| dt330 || TBD || ||
+|| nudaq_driver || TBD || ||
+|| owis2 || TBD || ||
+|| USB2000 || kernel 2.6.22.19 on x86_64, OpenSuSE 10.3<br>kernel 2.6.24-23-generic on i686, Xubuntu 7.10<br>kernel 2.6.25.20 on i686, OpenSuSE 11.0|| ||
