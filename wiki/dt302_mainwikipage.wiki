@@ -1,0 +1,15 @@
+#summary Driver for data translation card dt302/322
+
+= Introduction =
+
+This is still a stub. This page should explain the basic idea of the driver, the installation instructions and an overview of the working and the desired applications.
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+== Installation ==
+== Known bugs ==
