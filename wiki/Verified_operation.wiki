@@ -8,8 +8,8 @@ Keep in mind that this list is very incomplete, since one needs to verify if the
 = Confirmed list =
 
 || *Driver* || *Confirmed to work in the configuration* || *Known limitations* ||
-|| dt302 || TBD || ||
-|| dt340 || TBD || ||
+|| dt302 || kernel 2.6.25-0.2-pae on i686, OpenSuSE 11.0 || Dt322 card gives funny values ||
+|| dt340 || kernel 2.6.25-0.2-pae on i686, OpenSuSE 11.0 || ||
 || dt330 || TBD || ||
 || nudaq_driver || TBD || ||
 || owis2 || TBD || ||
