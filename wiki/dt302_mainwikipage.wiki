@@ -13,3 +13,6 @@ Add your content here.  Format your content with:
 
 == Installation ==
 == Known bugs ==
+
+= Confirmed working kernels =
+ * Compiles nicely on a 2.6.27 kernel on a i586 machine (to be tested)
