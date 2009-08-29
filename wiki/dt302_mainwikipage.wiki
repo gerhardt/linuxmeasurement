@@ -15,4 +15,4 @@ Add your content here.  Format your content with:
 == Known bugs ==
 
 = Confirmed working kernels =
- * Compiles nicely on a 2.6.27 kernel on a i586 machine (to be tested)
+ * Compiles nicely on a 2.6.27 kernel on a i586 and on a x86_64 machine. Revision 29 has been tested to work on x86_64
