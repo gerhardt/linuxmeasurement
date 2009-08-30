@@ -8,9 +8,10 @@ Keep in mind that this list is very incomplete, since one needs to verify if the
 = Confirmed list =
 
 || *Driver* || *Confirmed to work in the configuration* || *Known limitations* ||
-|| dt302 || kernel 2.6.25-0.2-pae on i686, OpenSuSE 11.0 || Dt322 card gives funny values ||
-|| dt340 || kernel 2.6.25-0.2-pae on i686, OpenSuSE 11.0 || ||
+|| dt302 || kernel 2.6.25-0.2-pae on i686, OpenSuSE 11.0<br>kernel 2.6.27.25-0.1 SMP on x86_64, Opensuse 11.1 || many progs fixed with rev 31 ||
+|| dt340 || kernel 2.6.25-0.2-pae on i686, OpenSuSE 11.0<br>kernel 2.6.27.25-0.1 SMP on x86_64, Opensuse 11.1|| ||
 || dt330 || TBD || ||
-|| nudaq_driver || TBD || ||
-|| owis2 || TBD || ||
+|| nudaq_driver || TBD || as of kernel 2.6.13 or so, this thing hangs unpredictably after a few minutes activity. No clues so far why; possibly some mem mapping issues.
+||
+|| owis2 || kernel 2.6.27.25-0.1 SMP on x86_64, Opensuse 11.1 || ||
 || USB2000 || kernel 2.6.22.19 on x86_64, OpenSuSE 10.3<br>kernel 2.6.24-23-generic on i686, Xubuntu 7.10<br>kernel 2.6.25.20 on i686, OpenSuSE 11.0|| ||
