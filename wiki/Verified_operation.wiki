@@ -14,4 +14,4 @@ Keep in mind that this list is very incomplete, since one needs to verify if the
 || nudaq_driver || TBD || as of kernel 2.6.13 or so, this thing hangs unpredictably after a few minutes activity.||
 ||
 || owis2 || kernel 2.6.27.25-0.1 SMP on x86_64, Opensuse 11.1 || ||
-|| USB2000 || kernel 2.6.22.19 on x86_64, OpenSuSE 10.3<br>kernel 2.6.24-23-generic on i686, Xubuntu 7.10<br>kernel 2.6.25.20 on i686, OpenSuSE 11.0|| ||
+|| USB2000 || kernel 2.6.22.19 on x86_64, OpenSuSE 10.3<br>kernel 2.6.24-23-generic on i686, Xubuntu 7.10<br>kernel 2.6.25.20 on i686, OpenSuSE 11.0<br>kernel 2.6.31.12-0.1-desktop on Suse 11.2 as of svn rev 37|| some ioctl changes with svn rev 37||
