@@ -16,7 +16,7 @@ Perhaps this is a bit of a stupid remark on this platform, but you need to make 
 = Installing only a single driver via svn =
 If you only want to install a single driver (e.g. `dt302`) into your `driverdirectory`, follow these steps:
  # cd into the `driverdirectory`
- # issue the command<br>` svn checkout http://linuxmeasurement.googlecode.com/svn/trunk/dt302`
+ # issue the command<br>` svn checkout https://linuxmeasurement.googlecode.com/svn/trunk/dt302`
 
 If you later want to update the driver, cd into the directory `dt302` (for the above example) and issue the command `svn update` - then, don't forget to issue the `make` instructions.
 
@@ -24,7 +24,7 @@ If you later want to update the driver, cd into the directory `dt302` (for the a
 = Installation of all packets via svn =
 Assuming that you want your drivers located in a subdirectory named `programdirectory` in the directory `homedirectory`, then you can install all the drivers with the following steps:
  # cd into `homedirectory`
- # get all code with the following command:<br>`svn checkout http://linuxmeasurement.googlecode.com/svn/trunk/ programdirectory`
+ # get all code with the following command:<br>`svn checkout https://linuxmeasurement.googlecode.com/svn/trunk/ programdirectory`
  # cd into the individual subdirectories and follow the make instructions there.
 
 You should be able to add code and other directories as well at your heart's content. If you want to update all drivers at once from the repository, go into the program directory and issue the command `svn update` . All the repository and status information is kept in the hidden directories `.svn`. Specifically, an update will not affect any other directories and files you have created.
@@ -36,7 +36,7 @@ If there is already a directory on your machine with roughly the necessary direc
 At the moment, I am not sure if there exists already a clean svn command for this, but it looks like the following recipie works without loosing other stuff which is in this directory.  The example assumes you have a directory `dt302` installed in the `programs` directory, which contains not only the driver but also some other stuff, e.g. a directory with measurement data files:
  # cd into the directory which hosts the driver directory:<br>`cd programs`
  # Rename the currently existing driver directory into something temporary:<br>`mv dt302 dt302.tmp`<br>This protects the whole directory from being tampered with.
- # Generate a new driver directory which contains all the svn framework:<br>`svn checkout http://linuxmeasurement.googlecode.com/svn/trunk/dt302`<br>You should have a virgin copy of the driver directory now.
+ # Generate a new driver directory which contains all the svn framework:<br>`svn checkout https://linuxmeasurement.googlecode.com/svn/trunk/dt302`<br>You should have a virgin copy of the driver directory now.
  # cd into the new directory and generate the driver files:<br>`cd dt320 ; make`<br>You want to do this at this point because otherwise you get all the old compiled drivers into the new directory.
  # Copy the stuff which does not exist in the new directory over from the old directory (assuming that you are in the new directory already):<br>`cp -purv ../dt302.tmp/* ./`<br>This should copy over all the stuff which did exist in the old directory and for which there is no correspondence in the drive directory from the repository.
  # You need to inspect the log of the copy command with some care to find out if there are files copied over you actually don't want in the new directory, like makefiles which have a slightly different name. Remove such files in the new directory to avoid some problems.
